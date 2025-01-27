@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Landing Page minimalista e elegante">
+    <title>AppConty</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Em breve - App Conty</h1>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">AppConty</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#features">Diferenciais</a></li>
+                <li><a href="#contact">Sobre</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Fevereiro 2025</h2>
-            <button id="cta-button">Saiba Mais</button>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Marketing fácil, divertido e acessível</h1>
+                <p>para que todos tenham o poder de mostrar seu talento pro mundo!</p>
+                <button class="cta" id="ctaBtn">Em breve...</button>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Nossos diferenciais</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Qualidade</h3>
+                    <p>Conteúdos eficientes</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Facilidade</h3>
+                    <p>Feito para qualquer pessoa</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© P2 Intelligence</p>
+    <footer class="footer">
+        <p id="contact">© 2025 Created by P2 team.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
