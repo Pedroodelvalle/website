@@ -6,6 +6,13 @@
     <meta name="description" content="Landing Page minimalista e elegante">
     <title>AppConty</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta property="og:title" content="AppConty - Marketing Inteligente">
+    <meta property="og:description" content="Simplifique seu marketing com IA">
+    <meta property="og:image" content="img/og-image.jpg">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
     <header class="header">
@@ -16,6 +23,8 @@
                 <li><a href="#features">Diferenciais</a></li>
                 <li><a href="#contact">Sobre</a></li>
             </ul>
+            <!-- Botão de tema -->
+            <button class="theme-toggle" aria-label="Alternar tema">🌓</button>
             <button class="menu-toggle" aria-label="Abrir menu">☰</button>
         </nav>
     </header>
@@ -33,12 +42,16 @@
             <h2>Nossos diferenciais</h2>
             <div class="features-grid">
                 <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
                     <h3>Qualidade</h3>
                     <p>Conteúdos eficientes</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <h3>Facilidade</h3>
-                    <p>Feito para qualquer pessoa</p>
+                    <i class="fas fa-rocket"></i>
+                    <h3>Qualidade</h3>
+                    <p>Conteúdos eficientes</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,4 +63,7 @@
 
     <script src="js/script.js"></script>
 </body>
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
 </html>
