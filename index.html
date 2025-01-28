@@ -15,55 +15,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">AppConty</div>
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <header>
+        <nav class="nav container">
+            <a href="#" class="logo">AppConty</a>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#features">Diferenciais</a></li>
-                <li><a href="#contact">Sobre</a></li>
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#features" class="nav-link">Diferenciais</a></li>
+                <li><a href="#pricing" class="nav-link">Planos</a></li>
+                <li><a href="#contact" class="nav-link">Sobre</a></li>
             </ul>
-            <!-- Botão de tema -->
-            <button class="theme-toggle" aria-label="Alternar tema">🌓</button>
-            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Alternar tema">🌓</button>
+                <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero container">
             <div class="hero-content">
-                <h1>Marketing fácil, divertido e acessível</h1>
-                <p>para que todos tenham o poder de mostrar seu talento pro mundo!</p>
-                <button class="cta" id="ctaBtn">Em breve...</button>
+                <h1 class="hero-title">Marketing fácil, divertido e acessível</h1>
+                <p class="hero-subtitle">Mostre seu talento para o mundo com poder e simplicidade.</p>
+                <button class="cta" id="ctaBtn" aria-label="Saber mais sobre lançamento">Em breve...</button>
             </div>
         </section>
 
-        <section id="features" class="section">
-            <h2>Nossos diferenciais</h2>
+        <section id="features" class="section container">
+            <h2 class="section-title">Nossos diferenciais</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Qualidade</h3>
-                    <p>Conteúdos eficientes</p>
-                    </div>
+                    <i class="fas fa-rocket feature-icon"></i>
+                    <h3 class="feature-title">Velocidade</h3>
+                    <p class="feature-text">Resultados rápidos e eficientes.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Qualidade</h3>
-                    <p>Conteúdos eficientes</p>
-                    </div>
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3 class="feature-title">Inteligência</h3>
+                    <p class="feature-text">Marketing impulsionado por IA.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3 class="feature-title">Comunidade</h3>
+                    <p class="feature-text">Conexão com clientes e parceiros.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section container">
+            <h2 class="section-title">Escolha o plano ideal para você</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Mensal</h3>
+                    <p class="pricing-price">R$49/mês</p>
+                    <ul class="pricing-features">
+                        <li>Sem compromisso</li>
+                        <li>Suporte dedicado</li>
+                        <li>Cancelamento fácil</li>
+                    </ul>
+                    <button class="pricing-cta">Assinar</button>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Semestral</h3>
+                    <p class="pricing-price">R$39/mês</p>
+                    <ul class="pricing-features">
+                        <li>Melhor custo-benefício</li>
+                        <li>Suporte dedicado</li>
+                        <li>Cancelamento fácil</li>
+                    </ul>
+                    <button class="pricing-cta">Assinar</button>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Anual</h3>
+                    <p class="pricing-price">R$29/mês</p>
+                    <ul class="pricing-features">
+                        <li>Economia garantida</li>
+                        <li>Suporte dedicado</li>
+                        <li>Cancelamento fácil</li>
+                    </ul>
+                    <button class="pricing-cta">Assinar</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p id="contact">© 2025 Created by P2 team.</p>
+    <footer class="footer container">
+        <p class="footer-text">© 2025 Created by P2 team.</p>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-    <div class="loader">
-        <div class="loader-spinner"></div>
-    </div>
 </html>
